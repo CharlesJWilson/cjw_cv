@@ -19,53 +19,74 @@
     </head>
 
     <body>
-        <header id="header" class="">
-            <h1 id="header-name">Charles Wilson</h1>
-            <section id="header-location"><p>Oxford, UK</p></section>
-            <section id="header-email"><a href="mailto:charleswilson1991@googlemail.com">charleswilson1991@googlemail.com</a></section>
-        </header>
-
-        <section id="content">
-            <article>
-                <h2>Work Experience</h2>
-
-                <section class="content-section work-section">
-                    <header>
-                        <h3>Amazon Development Centre London</h3>
-                        <h4>Software Development Engineer</h4>
-                        <p><time datetime="2014-09">September 2014</time> &mdash; Present</p>
-                    </header>
-                    <ul>
-                        <li><p>Member of the Digital Video Disk ByPost team. Responsible for the LOVEFiLM DVD and BluRay disk rental</p></li>
-                        <li><p>Member of the Video Commerce Experience team. Responsible for the UI and client experience for the Prime Signup funnels.</p></li>
-                    </ul>
-                </section>
-                <section class="content-section work-section">
-                    <header>
-                        <h3>Amazon Development Centre London</h3>
-                        <h4>Software Development Engineer, Intern</h4>
-                        <p><time datetime="2013-06">June 2013</time> &mdash; August 2013</p>
-                    </header>
-                    <ul>
-                        <li><p>Member of the Digital Video Website Playback team.</p></li>
-                        <li><p>Implemented the first Desktop iterration of the Amazon Video XRay feature on the Silverlight website player.</p></li>
-                    </ul>
-                </section>
-            </article>
-            <article>
-                <h2>Education</h2>
-
-                <section class="content-section education-section">
-                    <header>
-                        <h3>Durham University</h3>
-                        <h4>Software Engineering</h4>
-                    </header>
-                    <p><time datetime="2011-10">October 2011</time> &mdash; July 2014</p>
-                    <ul>
-                        <li><p>Second-class honours; Upper devision degree achieved.</p></li>
-                    </ul>
-                </section>
-            </article>
-        </section>
+        <div class="a-page">
+            <header id="header" class="">
+                <h1 id="header-name">Charles Wilson</h1>
+                <section id="header-location"><p>Oxford, UK</p><p><a href="http://charlesjwilson.com">charlesjwilson.com</a></p></section>
+                <section id="header-email"><a href="mailto:charleswilson1991@googlemail.com">charleswilson1991@googlemail.com</a></section>
+            </header>
+    
+            <section id="content">
+                <article>
+                    <h2>Work Experience</h2>
+    
+                    <section class="content-section work-section">
+                        <header class="content-header">
+                            <div class="header-position"><h4>Software Development Engineer</h4></div>
+                            <div class="header-location"><h3>Amazon Development Centre London</h3></div>
+                            <p class="header-time"><time datetime="2016-02">February 2016</time> &mdash; Present</p>
+                        </header>
+                        <h3 class="section-team">Video Commerce Experience Clients Team</h3>
+                        <ul>
+                            <li><p>Member of the Video Commerce Experience team (ViCE UI). Responsible for the UI and client experience for the Prime Signup funnels on web, mobile web and big screen devices..</p></li>
+                            <li><p>During the 2018 year, ViCE UI had 440MM distinct impressions on web, over 265MM distinct impressions on mobile apps, and over 32MM distinct impressions on big screen devices world wide.</p></li>
+                            <li><p>Designed, implemented and released an updated FireTV signup experience including payment entry. Testing saw a 90% increase in target customer conversion rates, forecasting to $58MM additional revenue for the year across all Prime Video Subscription Video on Demand (SVOD).</p></li>
+                            <li><p>Completed a total re-write of the web, mobile web and webview experienced from a fully Perl Mason monolithic stack stack to a ReactJS widgetised solution</p></li>
+                        </ul>
+                    </section>
+                    <section class="content-section work-section">
+                        <header class="content-header">
+                            <div class="header-position"><h4>Software Development Engineer</h4></div>
+                            <div class="header-location"><h3>Amazon Development Centre London</h3></div>
+                            <p  class="header-time"><time datetime="2014-09">September 2014</time> &mdash; Feb 2016</p>
+                        </header>
+                        <h3 class="section-team">LOVEFiLM Disks ByPost Clients Team</h3>
+                        <ul>
+                            <li><p>Member of the Digital Video Disk ByPost team. Responsible for the LOVEFiLM DVD and BluRay disk rental.</p></li>
+                            <li><p>Implemented a custom customer authentication integration for the ByPost mobile app based in Apache Cordova.</p></li>
+                            <li><p>Worked on the subscription creation and LOVEFiLM to Amazon Video subscription migration systems (Java, SpringMVC)</p></li>
+                            <li><p>Worked on the customer interaction website including rental list management, details page and account management page. (Perl Mason, SCSS, JS)</p></li>
+                        </ul>
+                    </section>
+                        <section class="content-section work-section">
+                        <header class="content-header">
+                            <div class="header-position"><h4>Software Development Engineer, Intern</h4></div>
+                            <div class="header-location"><h3>Amazon Development Centre London</h3></div>
+                            <p class="header-time"><time datetime="2013-06">June 2013</time> &mdash; August 2013</p>
+                        </header>
+                        <h3 class="section-team">Digital Video Website Playback Team</h3>
+                        <ul>
+                            <li><p>Member of the Digital Video Website Playback team.</p></li>
+                            <li><p>Implemented an internal web tool in Java Spark framework to allow for tracking of issues and learning resources.</p></li>
+                            <li><p>Implemented the first Desktop iteration of the Amazon Video XRay feature on the Silverlight website player, while ensuring minimal impact on CPU usage and playback experience. (C#, XHTML)</p></li>
+                        </ul>
+                    </section>
+                </article>
+                <article>
+                    <h2>Education</h2>
+    
+                    <section class="content-section education-section">
+                        <header class="content-header">
+                            <h4>Software Engineering</h4>
+                            <h3>Durham University</h3>
+                            <p><time datetime="2011-10">October 2011</time> &mdash; July 2014</p>
+                        </header>
+                        <ul>
+                            <li><p>Second-class honours; Upper devision degree achieved.</p></li>
+                        </ul>
+                    </section>
+                </article>
+            </section>
+        </div>
     </body>
 </html>
