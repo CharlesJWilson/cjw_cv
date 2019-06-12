@@ -71,4 +71,30 @@ article h2 {
   padding-left: 2em;
 }
 
+@media only screen and (max-width: 600px) {
+  .a-page {
+    width: 100%;
+    box-shadow: none;
+    padding: 1em;
+    margin: 0;
+    border: 0;
+    border-top: 2px solid rgba(0, 0, 0, 0.5);
+  }
+
+  #header {
+    flex-direction: column;
+  }
+  #header h1 {
+    order: 1;
+  }
+  #header #header-email {
+    text-align: center;
+    order: 3;
+  }
+  #header #header-location {
+    text-align: center;
+    order: 2;
+  }
+}
+
 /*# sourceMappingURL=style.css.map */
