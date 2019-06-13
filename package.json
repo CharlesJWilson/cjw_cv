@@ -1,0 +1,30 @@
+{
+  "name": "cjw_cv",
+  "version": "1.0.0",
+  "description": "The curriculum vitae for Charles J Wilson",
+  "scripts": {
+    "autoprefixer": "./node_modules/postcss-cli/bin/postcss --use autoprefixer --autoprefixer.browsers '> 1%' -o html/style.css --no-map",
+    "sass": "./node_modules/node-sass/bin/node-sass --output-style compressed html/style.scss > html/style.css",
+    "watch-css": "nodemon -e scss -x \"npm run build-css\"",
+    "build-css": "npm run sass",
+    "build": "npm run build-css",
+    "release": "npm run build",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/CharlesJWilson/cjw_cv.git"
+  },
+  "author": "Charles J Wilson",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/CharlesJWilson/cjw_cv/issues"
+  },
+  "homepage": "https://github.com/CharlesJWilson/cjw_cv#readme",
+  "dependencies": {
+    "autoprefixer": "^9.6.0",
+    "node-sass": "^4.12.0",
+    "nodemon": "^1.19.1",
+    "postcss-cli": "^6.1.2"
+  }
+}
