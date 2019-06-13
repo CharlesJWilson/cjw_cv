@@ -6,7 +6,7 @@
 
 .a-page {
     width: 21cm;
-    margin: 1cm auto;
+    margin: 0 auto 1cm auto;
     padding: 0.5cm 1cm;
     box-sizing: border-box;
     font-family: 'Source Sans Pro', 'Open Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
@@ -81,6 +81,27 @@ article {
         padding-left: 2em;
     }
 }
+/************************** Download PDF ****************/
+
+#dl-pdf {
+    padding: 15px;
+    color: #920000;
+    text-align: center;
+}
+#dl-pdf a, #dl-pdf a:link, #dl-pdf a:hover, #dl-pdf a:focus {
+    color: #920000;
+}
+@media print {
+    #dl-pdf {
+        display: none;
+    }
+    .a-page {
+        margin: 0 auto;
+        padding: 0.5cm 1cm;
+    }
+}
+
+/****************** Mobile Devices *******************/
 
 @media only screen and (max-width: 600px) {
     .a-page {

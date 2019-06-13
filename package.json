@@ -3,12 +3,15 @@
   "version": "1.0.0",
   "description": "The curriculum vitae for Charles J Wilson",
   "scripts": {
+    "serve": "serve -p 8080 build",
     "autoprefixer": "./node_modules/postcss-cli/bin/postcss --use autoprefixer --autoprefixer.browsers '> 1%' -o html/style.css --no-map",
     "sass": "./node_modules/node-sass/bin/node-sass --output-style compressed html/style.scss > html/style.css",
     "watch-css": "nodemon -e scss -x \"npm run build-css\"",
     "build-css": "npm run sass",
     "build": "npm run build-css",
-    "release": "npm run build",
+    "release": "npm run build && npm run generate-pdf",
+    "post-release": "cp ./html/index.html ./build/index.html && cp ./html/style.css ./build/style.css",
+    "generate-pdf": "[ -d './build' ] && npm run post-release && node build-tools/generate-pdf.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
@@ -22,9 +25,12 @@
   },
   "homepage": "https://github.com/CharlesJWilson/cjw_cv#readme",
   "dependencies": {
+    "serve": "^6.4.1",
     "autoprefixer": "^9.6.0",
     "node-sass": "^4.12.0",
     "nodemon": "^1.19.1",
-    "postcss-cli": "^6.1.2"
+    "path": "^0.12.7",
+    "postcss-cli": "^6.1.2",
+    "puppeteer": "^1.17.0"
   }
 }
