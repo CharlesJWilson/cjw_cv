@@ -25,7 +25,7 @@
   },
   "homepage": "https://github.com/CharlesJWilson/cjw_cv#readme",
   "dependencies": {
-    "serve": "^6.4.1",
+    "serve": "^10.1.2",
     "autoprefixer": "^9.6.0",
     "node-sass": "^4.12.0",
     "nodemon": "^1.19.1",
